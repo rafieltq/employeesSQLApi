@@ -7,7 +7,7 @@
 $ git clone https://github.com/rafieltq/employeesSQLApi.git
 ```
 ## Estableciendo el entorno de desarrollo
-### Ejecutar Script de la Base de datos situado en la raiz del proyecto
+### Ejecutar Script de la Base de datos **"Databaseprueba.sql"** situado en la raiz del proyecto
 - Este generará la base de datos y la tabla para que el api funcione.
 ### Abrir el proyecto en Visual studio
 - Entrar a la carpeta Models y buscar el archivo **pruebaContext.cs**.
