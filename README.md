@@ -47,7 +47,5 @@ public virtual DbSet<Persona> Personas { get; set; }
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
-  }
-}
 ```
 - Sea cual sea el perfil de ejecución que utilice, verificar ahi este el puerto correspondiente
