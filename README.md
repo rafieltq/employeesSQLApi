@@ -2,13 +2,27 @@
 ## Tecnologias utilizadas
 - .NET 5.0
 - SSMS (SQL SERVER MANAGEMENT STUDIO) 2019
-## Asegurese de que el puerto donde esté corriendo el api sea el 5001
-• Para ejecutar clone el repositorio:
+### Clonar Repositorio
 ```bash
-$ git clone https://github.com/R4FI3L/employeesSQLApi.git
+$ git clone https://github.com/rafieltq/employeesSQLApi.git
 ```
-- Ejecutar en modo de desarrollo en Visual Studio
-- Por último entrar al link para ver el frontend (Si tiene algún bloqueador de anuncios como AdbBlock debe desactivarlo):
-https://crud-empleados.netlify.app/
-## Notas
-- El proyecto cumple los requisitos planteados en la práctica, pero seguiré desarrollandolo y puliendolo.
+## Estableciendo el entorno de desarrollo
+### Ejecutar Script de la Base de datos situado en la raiz del proyecto
+- Este generará la base de datos y la tabla para que el api funcione.
+### Abrir el proyecto en Visual studio
+- Entrar a la carpeta Models y buscar el archivo **pruebaContext.cs**.
+```bash
+public virtual DbSet<Persona> Personas { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Server=DESKTOP-HKAVBPR\\SQLEXPRESS;Database=prueba;user=usuario;password=contraseña;");
+            }
+        }
+```
+- En este bloque de código colocar las credenciales de su Servidor de SQL Management Studio
+## Importante Asegurarse de que el proyecto corra en el puerto 5001 para poder ejecutar junto al frontend
+- link del frontend en netlify: https://crud-empleados.netlify.app/
+- Si tiene algún bloqueador de anuncios debe desactivarlo, esto puede causar conflictos.
