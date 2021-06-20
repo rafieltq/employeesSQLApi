@@ -48,4 +48,4 @@ public virtual DbSet<Persona> Personas { get; set; }
       }
     }
 ```
-- Sea cual sea el perfil de ejecución que utilice, verificar ahi este el puerto correspondiente
+- Sea cual sea el perfil de ejecución que utilice, verificar que ahi este el puerto correspondiente
