@@ -10,3 +10,5 @@ $ git clone https://github.com/R4FI3L/employeesSQLApi.git
 - Ejecutar en modo de desarrollo en Visual Studio
 - Por último entrar al link para ver el frontend (Si tiene algún bloqueador de anuncios como AdbBlock debe desactivarlo):
 https://crud-empleados.netlify.app/
+## Notas
+- El proyecto cumple los requisitos planteados en la práctica, pero seguiré desarrollandolo y puliendolo.
