@@ -49,3 +49,7 @@ public virtual DbSet<Persona> Personas { get; set; }
     }
 ```
 - Sea cual sea el perfil de ejecución que utilice, verificar que ahi este el puerto correspondiente
+## Si asi lo desea puede descargar el sencillo frontend hecho para el api y probar totalmente en local
+```bash
+$ git clone https://github.com/rafieltq/crud-employees.git
+```
