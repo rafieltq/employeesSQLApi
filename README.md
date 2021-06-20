@@ -26,3 +26,28 @@ public virtual DbSet<Persona> Personas { get; set; }
 ## Importante Asegurarse de que el proyecto corra en el puerto 5001 para poder ejecutar junto al frontend
 - link del frontend en netlify: https://crud-empleados.netlify.app/
 - Si tiene algún bloqueador de anuncios debe desactivarlo, esto puede causar conflictos.
+## Para cerciorar que el puerto sea el correcto verificar en **Properties>launchSettings.json**.
+```bash
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "api/Persona",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "employeesApi": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "launchBrowser": true,
+      "launchUrl": "api/Persona",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
+```
+- Sea cual sea el perfil de ejecución que utilice, verificar ahi este el puerto correspondiente
